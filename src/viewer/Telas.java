@@ -4,17 +4,17 @@ import javax.swing.*;
 public class Telas {
 
 	public Telas(){
-		JFrame tela = new JFrame("Dor de Cabe�a");
+		JFrame tela = new JFrame("Dor de Cabeça");
 		
 		JLabel total=new JLabel("Total de Entradas");
 		total.setBounds(150, 10, 100, 50);
 		tela.add(total);
 		
-		JLabel duracao=new JLabel("Dura��o M�dia da Dor");
+		JLabel duracao=new JLabel("Duração Média da Dor");
 		duracao.setBounds(140, 150, 150, 50);
 		tela.add(duracao);
 		
-		JLabel intensidade=new JLabel("Intensidade M�dia da Dor");
+		JLabel intensidade=new JLabel("Intensidade Média da Dor");
 		intensidade.setBounds(130, 310, 150, 50);
 		tela.add(intensidade);
 		
@@ -32,29 +32,41 @@ public class Telas {
 		
 		JLabel data = new JLabel("Data");
 		JTextField data_in = new JTextField(" ");
-		JLabel hora = new JLabel("Hora");
-		JLabel tempo = new JLabel("Tempo de Dura��o");
-		JLabel inten = new JLabel("Intensidade da Dor");
-		JLabel local = new JLabel("Local da Dor");
-		JLabel causa = new JLabel("Prov�vel Causa");
-		JLabel med = new JLabel("Medica��o");
+		data_in.setBounds(50, 70, 100, 25);
 		data.setBounds(50,8, 100, 100);
-		data_in.setBounds(50, 100, 100, 15);
-		hora.setBounds(250,8, 100, 100);
-		tempo.setBounds(120, 110, 120, 100);
-		inten.setBounds(120, 210, 120, 100);
-		local.setBounds(130, 310, 120, 100);
-		causa.setBounds(120, 410, 120, 100);
-		med.setBounds(130, 510, 120, 100);
 		tela2.add(data);
-		tela2.add(hora);
-		tela2.add(tempo);
-		tela2.add(inten);
-		tela2.add(local);
-		tela2.add(causa);
-		tela2.add(med);
 		tela2.add(data_in);
 
+		JLabel hora = new JLabel("Hora");
+		JTextField hora_in = new JTextField(" ");
+		hora_in.setBounds(250, 70, 100, 25);
+		hora.setBounds(250,8, 100, 100);
+		tela2.add(hora);
+		tela2.add(hora_in);
+
+		JLabel tempo = new JLabel("Tempo de Duração");
+		JTextField duracao_in = new JTextField(" ");
+		duracao_in.setBounds(130, 170, 100, 25);
+		tempo.setBounds(125, 110, 120, 100);
+		tela2.add(tempo);
+		tela2.add(duracao_in);
+
+		JLabel inten = new JLabel("Intensidade da Dor");
+		inten.setBounds(120, 210, 120, 100);
+		tela2.add(inten);
+
+		JLabel local = new JLabel("Local da Dor");
+		local.setBounds(130, 310, 120, 100);
+		tela2.add(local);
+
+		JLabel causa = new JLabel("Provável Causa");
+		causa.setBounds(120, 410, 120, 100);
+		tela2.add(causa);
+
+		JLabel med = new JLabel("Medicação");
+		med.setBounds(130, 510, 120, 100);
+		tela2.add(med);
+		
 		tela2.setVisible(true);
 
 	}
