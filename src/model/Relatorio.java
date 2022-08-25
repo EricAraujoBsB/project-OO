@@ -1,3 +1,4 @@
+// finalizar metodos rel
 package model;
 
 import java.util.*;
@@ -14,7 +15,6 @@ public class Relatorio {
 		hora = h;
 		duracao = dur;
 		this.dor = dor;
-		
 	}
 	
 	//GETs e SETs
@@ -53,6 +53,4 @@ public class Relatorio {
 	public void excluir_entrada() {
 		
 	}
-
-	teste
 }
