@@ -3,8 +3,8 @@ package model;
 import java.util.*;
 
 public class Relatorio {
-	private date data;
-	private time hora;
+	private String data;
+	private String hora;
 	private float duracao;
 	private Dor_de_Cabeca dor;
 	
