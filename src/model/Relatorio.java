@@ -10,7 +10,7 @@ public class Relatorio {
 	private Dor_de_Cabeca dor;
 	
 	//construtor
-	public Relatorio(date d, time h, float dur, Dor_de_Cabeca dor ) {
+	public Relatorio(String d, String h, float dur, Dor_de_Cabeca dor ) {
 		data = d;
 		hora = h;
 		duracao = dur;
@@ -18,16 +18,16 @@ public class Relatorio {
 	}
 	
 	//GETs e SETs
-	public date getData() {
+	public String getData() {
 		return data;
 	}
-	public void setData(date d) {
+	public void setData(String d) {
 		this.data = d;
 	}
-	public time getHora() {
+	public String getHora() {
 		return hora;
 	}
-	public void setHora(time t) {
+	public void setHora(String t) {
 		this.hora = t;
 	}
 	public float getDuracao() {

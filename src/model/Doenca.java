@@ -1,10 +1,10 @@
 package model;
 
 public abstract class Doenca {
-	private String nome;
-	private String sintomas;
-	private String tratamento;
-	private String medicacao;
+	protected String nome;
+	protected String sintomas;
+	protected String tratamento;
+	protected String medicacao;
 	
 	//chamada de um contrutor super
 	public Doenca() {

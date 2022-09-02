@@ -5,9 +5,6 @@ public class Dor_de_Cabeca extends Doenca {
 	private String local;
 	private String causa_provavel;
 	
-	public Dor_de_Cabeca() {
-		super();
-	}
 
 	//sobrecarga do construtor
 	public Dor_de_Cabeca(String n, String s, String t, String m, int i, String l, String c) {
