@@ -54,34 +54,36 @@ public class Telas {
 
 		JLabel inten = new JLabel("Intensidade da Dor");
 		inten.setBounds(120, 210, 120, 100);
-		String[] n_inten = new String[10];
-		n_inten[0] = "1";
-		n_inten[1] = "2";
-		n_inten[2] = "3";
-		n_inten[3] = "4";
-		n_inten[4] = "5";
-		n_inten[5] = "6";
-		n_inten[6] = "7";
-		n_inten[7] = "8";
-		n_inten[8] = "9";
-		n_inten[9] = "10";
-		JList intens = new JList<>(n_inten);
-		intens.setBounds(115, 270, 120, 30);
+		String[] n_inten = {"1","2","3","4","5","6","7","8","9","10"};
+		JList list_intens = new JList<>(n_inten);
+		list_intens.setBounds(115, 270, 120, 30);
 		tela2.add(inten);
-		tela2.add(intens);
+		tela2.add(list_intens);
 
 		JLabel local = new JLabel("Local da Dor");
 		local.setBounds(130, 310, 120, 100);
+		String[] locals = {};
+		JList list_locals = new JList<>(locals);
+		list_locals.setBounds(115, 370, 120, 30);
 		tela2.add(local);
+		tela2.add(list_locals);
 
 		JLabel causa = new JLabel("Provável Causa");
 		causa.setBounds(120, 410, 120, 100);
+		String[] causes ={};
+		JList list_causes = new JList<>(causes);
+		list_causes.setBounds(115, 470, 120, 30);
 		tela2.add(causa);
+		tela2.add(list_causes);
 
 		JLabel med = new JLabel("Medicação");
 		med.setBounds(130, 510, 120, 100);
+		String[] medicines ={};
+		JList list_medicines = new JList<>(medicines);
+		list_medicines.setBounds(115, 570, 120, 30);
 		tela2.add(med);
-		
+		tela2.add(list_medicines);
+
 		tela2.setVisible(true);
 
 	}
