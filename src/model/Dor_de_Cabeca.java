@@ -63,7 +63,13 @@ public class Dor_de_Cabeca extends Doenca {
 	}
 	
 	//metodos
-	public void definir_dor() {
-		
+	public void definir_dor(int intensidade, String local, String causa, String medicacao) {
+		this.nome = "dor de cabeça";
+		this.sintomas = "nausea";
+		this.tratamento = "descanso";
+		this.medicacao = medicacao;
+		this.intensidade = intensidade;
+		this.local = local;
+		this.causa_provavel = causa;
 	}
 }
